@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <div class="ctn">
+        <h1> Registration Form</h1>
+        <div class="Container"> 
+            <div class="intro">
+                <p id="Name">Name</p>
+                <input type="text" placeholder="  First Name" class="FullName">
+                <input type="text" placeholder="  Second Name" class="FullName">
+                <input type="text" placeholder="  Last Name" class="FullName">
+                <div class="gendob">
+                    <p>Gender</p>
+                    <select id="Gender">
+                     <option value="Male">Male</option>
+                     <option value="Female">Female</option>
+                     <option value="Other">Other</option>
+                    </select>
+                    <p>Date of Birth</p>
+                    <input type="date" id="dob">
+                </div>
+            <div class="Contact"> 
+                <p> Phone Number</p>
+                <input type="text" placeholder="   Enter Phone Number" id="phone">
+                <p>Email</p>
+                <input type="text" placeholder="   example@gmail.com" id="eml">
+            </div>
+            <div class="Address">
+                <p>Address</p>
+                <input type="text" placeholder="    Enter full address" id="address">
+            </div>
+            <div class="Course">
+                <p>Course Applied For</p>
+                <select name="Course" id="Crse">
+                    <option value="MBA">MBA</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="B.sc">B.sc</option>
+                    <option value="BA">BA</option>
+                </select>
+            </div>
+            <div class="Domicile">
+                <p>Are you belongs to Uttar-Pradesh?</p>
+                <label for="id1">
+                    <input type="radio" value="Yes" id="id1"> Yes
+                </label>
+                <label for="id2">
+                    <input type="radio" value="No" id="id2"> No
+                </label>
+            </div>
+
+            <div class="education">
+                <p>Board of HighSchool</p>
+                <label>
+                    <input type="radio" name="UP Board" id="id3">UP Board
+                    <input type="radio" name="CBSE" id="id4">CBSE Board
+                    <input type="radio" name="Other Board" id="id5">Other Board
+                </label>
+            </div>
+                <input type="text" placeholder="     HighSchool Roll No." id="Hroll">
+
+            <div class="password">
+                <p>Create your password</p>
+                <input type="password" placeholder=" example:   Akgec#11" id="Crpass">
+                <input type="password" placeholder=" Confirm password" id="Conpass">
+            </div>
+            <div>
+                <button id="btn">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
